@@ -28,7 +28,8 @@
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "tsparticles-slim": "^2.12.0",
-    "use-mask-input": "^3.4.2"
+    "use-mask-input": "^3.4.2",
+    "vaul": "^1.1.2"
   },
   "devDependencies": {
     "typescript": "^5",
