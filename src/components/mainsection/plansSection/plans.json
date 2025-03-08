@@ -1,0 +1,48 @@
+[
+  {
+    "id": 0,
+    "name": "Plano Mensal",
+    "price": 97.0,
+    "title": "Flexibilidade",
+    "description": "Assinar por um mês oferece flexibilidade para experimentar nosso produto sem comprometer-se a longo prazo. É ideal para quem quer testar nossos serviços antes de fazer um compromisso de longo prazo.",
+    "time": "Garanta a assinatura mensal por apenas R$ 97,00",
+    "timeValue": "/mês",
+    "features": [
+      "Acesso completo aos recursos",
+      "Cancele a qualquer momento",
+      "Suporte por email"
+    ],
+    "link": "https://pay.hotmart.com/R73559963R?sck=HOTMART_PRODUCT_PAGE&off=i45tzl44&hotfeature=32&_gl=1*zvodqj*_ga*MTIxNzE5NDk1MS4xNzA4NjA0MDU3*_ga_GQH2V1F11Q*MTcwOTU4MDc3NC4zLjEuMTcwOTU4MTQ0OC42MC4wLjA.&bid=1709581451827"
+  },
+  {
+    "id": 1,
+    "name": "Plano Semestral",
+    "price": 185.0,
+    "title": "Economia a Médio Prazo",
+    "description": "Optar por uma assinatura de seis meses oferece uma economia significativa em relação à assinatura mensal. É uma excelente opção para usuários comprometidos que desejam economizar a médio prazo, mantendo a flexibilidade.",
+    "time": "Garanta seis meses de acesso por apenas 6x de R$ 73,02 ou à vista de R$ 397,00",
+    "timeValue": "/6 meses",
+    "features": [
+      "Acesso completo aos recursos",
+      "Economia de 25% vs. mensal",
+      "Suporte prioritário"
+    ],
+    "link": "https://pay.hotmart.com/R73559963R?sck=HOTMART_PRODUCT_PAGE&off=ns8px86h&hotfeature=32&_gl=1*1b8ew23*_ga*MTIxNzE5NDk1MS4xNzA4NjA0MDU3*_ga_GQH2V1F11Q*MTcwOTU4MDc3NC4zLjAuMTcwOTU4MDc3NC42MC4wLjA.&bid=1709580780690"
+  },
+  {
+    "id": 2,
+    "name": "Plano Anual",
+    "price": 567.0,
+    "title": "Maximize suas Economias",
+    "description": "Ao optar por uma assinatura anual, você aproveita as maiores economias disponíveis. Além disso, garante acesso ininterrupto aos nossos serviços pelo período mais longo possível. É a escolha ideal para usuários que estão comprometidos a longo prazo e desejam maximizar o valor de sua assinatura.",
+    "time": "Garanta 12 meses de acesso por apenas 12x de R$ 59,58 ou à vista de R$ 597,00",
+    "timeValue": "/ano",
+    "features": [
+      "Acesso completo aos recursos",
+      "Economia de 40% vs. mensal",
+      "Suporte VIP 24/7",
+      "Recursos exclusivos"
+    ],
+    "link": "https://pay.hotmart.com/R73559963R?sck=HOTMART_PRODUCT_PAGE&off=lq91vc4a&hotfeature=32&_gl=1*lwxxef*_ga*MTIxNzE5NDk1MS4xNzA4NjA0MDU3*_ga_GQH2V1F11Q*MTcwOTU4MDc3NC4zLjEuMTcwOTU4MTM0OC42MC4wLjA.&bid=1709581352681"
+  }
+]
