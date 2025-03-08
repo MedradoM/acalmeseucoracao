@@ -29,8 +29,6 @@ const Header = () => {
   const { isScrolled } = useScrollContext();
   const [open, setOpen] = useState(false);
 
-  if (!isScrolled) return;
-
   return (
     <header
       className={twMerge(
