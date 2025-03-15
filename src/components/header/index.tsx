@@ -44,7 +44,7 @@ const Header = () => {
           "absolute flex gap-2 top14 ",
           !open
             ? isScrolled
-              ? "Back bg-default-white rounded-full transition-all duration-1000"
+              ? "Back bg-default-white rounded-full w-fit transition-all duration-1000"
               : "Centered "
             : "Back"
         )}
