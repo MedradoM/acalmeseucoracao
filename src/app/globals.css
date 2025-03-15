@@ -73,6 +73,26 @@ body {
   }
 }
 
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 9px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 9px;
+  background-color: #b6c7aa;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: hsl(0 0% 14.9%) transparent;
+  }
+}
+
 .arsenal_sc {
   font-family: "Arsenal SC", sans-serif;
 }

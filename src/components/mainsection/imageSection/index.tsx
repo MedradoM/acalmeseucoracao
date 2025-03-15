@@ -8,7 +8,7 @@ const ImageSection = () => {
   const { isScrolled } = useScrollContext();
 
   return (
-    <div className="w-full m-0 p-0 h-screen relative snap-start">
+    <div className="w-full m-0 p-0 h-[145vh] relative snap-start">
       <Image
         alt="MainImage"
         className="lg:object-fill pointer-events-none  object-cover"

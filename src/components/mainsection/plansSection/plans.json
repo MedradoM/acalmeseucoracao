@@ -17,7 +17,7 @@
   {
     "id": 1,
     "name": "Plano Semestral",
-    "price": 185.0,
+    "price": 397.0,
     "title": "Economia a Médio Prazo",
     "description": "Optar por uma assinatura de seis meses oferece uma economia significativa em relação à assinatura mensal. É uma excelente opção para usuários comprometidos que desejam economizar a médio prazo, mantendo a flexibilidade.",
     "time": "Garanta seis meses de acesso por apenas 6x de R$ 73,02 ou à vista de R$ 397,00",
@@ -32,7 +32,7 @@
   {
     "id": 2,
     "name": "Plano Anual",
-    "price": 567.0,
+    "price": 597.0,
     "title": "Maximize suas Economias",
     "description": "Ao optar por uma assinatura anual, você aproveita as maiores economias disponíveis. Além disso, garante acesso ininterrupto aos nossos serviços pelo período mais longo possível. É a escolha ideal para usuários que estão comprometidos a longo prazo e desejam maximizar o valor de sua assinatura.",
     "time": "Garanta 12 meses de acesso por apenas 12x de R$ 59,58 ou à vista de R$ 597,00",
