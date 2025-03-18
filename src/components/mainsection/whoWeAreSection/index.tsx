@@ -37,7 +37,7 @@ const WhoWeAreSection = () => {
   }, []);
 
   return (
-    <div id="planos" className="px-[4%] lg:px-0 flex justify-center">
+    <div id="quem-somos" className="px-[4%] lg:px-0 flex justify-center">
       <div className="container h-full flex flex-col gap-16 px-[2%] lg:px-[8%]">
         <Title
           title="Quem somos"
