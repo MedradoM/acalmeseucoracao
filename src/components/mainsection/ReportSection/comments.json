@@ -1,0 +1,74 @@
+{
+  "comments": [
+    {
+      "id": 0,
+      "name": "Rafinha",
+      "description": "Designer",
+      "text": "Amei o programa acalme o seu coração! Me sinto muuto feliz toda vez que participo, tem me ajudado no meu dia a dia."
+    },
+    {
+      "id": 1,
+      "name": "Juliana",
+      "description": "Psicóloga",
+      "text": "Participar do programa tem sido transformador. As mensagens sempre chegam na hora certa e me trazem paz."
+    },
+    {
+      "id": 2,
+      "name": "Carlos",
+      "description": "Professor",
+      "text": "É incrível como pequenas palavras podem acalmar tanto. Me ajuda muito nos dias corridos e difíceis."
+    },
+    {
+      "id": 3,
+      "name": "Fernanda",
+      "description": "Estudante",
+      "text": "Sempre que escuto o programa, sinto como se estivesse recebendo um abraço. Recomendo para todos!"
+    },
+    {
+      "id": 4,
+      "name": "Thiago",
+      "description": "Analista de TI",
+      "text": "Me surpreendi com o conteúdo. Leve, profundo e com mensagens que realmente tocam o coração."
+    },
+    {
+      "id": 5,
+      "name": "Beatriz",
+      "description": "Empreendedora",
+      "text": "No meio da correria do dia, parar pra ouvir o programa é como respirar fundo. Me faz muito bem!"
+    },
+    {
+      "id": 6,
+      "name": "Gabriel",
+      "description": "Publicitário",
+      "text": "Comecei a ouvir por curiosidade e hoje não fico sem. Já faz parte da minha rotina de autocuidado."
+    },
+    {
+      "id": 7,
+      "name": "Lorena",
+      "description": "Enfermeira",
+      "text": "Acalmar o coração é mesmo necessário... e esse programa tem sido essencial pra mim nesse processo."
+    },
+    {
+      "id": 8,
+      "name": "Ricardo",
+      "description": "Motorista de aplicativo",
+      "text": "Escuto durante as viagens, e além de me acalmar, os passageiros sempre comentam positivamente!"
+    },
+    {
+      "id": 9,
+      "name": "Camila",
+      "description": "Artista plástica",
+      "text": "O programa desperta sentimentos bons. É como se falasse direto com a minha alma. Gratidão!"
+    }
+  ],
+  "videos": [
+    {
+      "id": 0,
+      "link": "https://www.youtube.com/embed/dQw4w9WgXcQ?si=jlQ9RejZJk3vPM-T"
+    },
+    {
+      "id": 1,
+      "link": "https://www.youtube.com/embed/dQw4w9WgXcQ?si=jlQ9RejZJk3vPM-T"
+    }
+  ]
+}

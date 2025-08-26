@@ -10,10 +10,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        "default-white": "#F6F4F2",
+        "default-white": "#f9f6ee",
         "default-green": "#B6C7AA",
         "default-golden": "#A0937D",
         "default-black": "#2E2E2E",
+        "default-pink": "#fddacc",
+        "default-purple": "#908bb3",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

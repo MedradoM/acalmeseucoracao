@@ -5,10 +5,14 @@ import { twMerge } from "tailwind-merge";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
+import { useScrollContext } from "@/context/scrollContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const WhoWeAreSection = () => {
+  const { scroll } = useScrollContext()
+  
   useEffect(() => {
     const allCards = gsap.utils.toArray<HTMLElement>(".cards");
     const width = document.body.clientWidth;
@@ -52,11 +56,11 @@ const WhoWeAreSection = () => {
             >
               <div
                 className={twMerge(
-                  "lg:w-1/2 relative h-[500px] bg-default-green flex items-center justify-center",
+                  "lg:w-1/2 relative rounded-t-lg h-[500px] bg-default-green justify-center flex overflow-hidden",
                   person.id === 1 ? "lg:rounded-l-lg" : "lg:rounded-r-lg"
                 )}
               >
-                <p>imagem aqui</p>
+                <Image style={{ transform: `translateY( ${0.05 * (scroll ?? 0) - ( person.id === 1 ? 50 : 80)}px )`,  }} className="transition-all ease-out" src={"/fer.png"} alt={person.name} width={300} height={500} />
               </div>
               <div className="flex p-8 lg:w-1/2 flex-col justify-between gap-8">
                 <div className="flex flex-col gap-4">

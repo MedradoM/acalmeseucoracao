@@ -5,7 +5,7 @@ import headerSections from "@/data/sections";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full bg-default-black justify-center">
+    <footer className="flex w-full flex-col gap-2 items-center bg-default-black justify-center">
       <div className="container px-[4%] lg:px-0  flex flex-col gap-8 py-9">
         <div className="flex w-full lg:flex-row gap-4 flex-col items-center justify-between">
           <Image
@@ -32,7 +32,13 @@ const Footer = () => {
             })}
           </div>
         </div>
+
         <span className="h-0 rounded-full w-full border border-default-golden" />
+        {/* 
+        <div className="size-full text-[8vw] alumni-sans-pinstripe-regular">
+          Acalme seu Coração
+        </div> */}
+
         <div className="w-full gap-4 flex-col lg:flex-row items-center justify-between flex">
           <p className="text-default-white lg:text-left text-center">
             © 2025 Acalme Seu Coração. Todos os direitos reservados.

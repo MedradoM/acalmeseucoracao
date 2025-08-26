@@ -1,13 +1,21 @@
 "use client";
 
 import PlansSection from "./plansSection";
-import ImageSection from "./imageSection";
 import QuestionSection from "./questionsSection";
 import WhoWeAreSection from "./whoWeAreSection";
-import { useEffect } from "react";
-import Lenis from "lenis"; // Adjust the import path as necessary
+import { useEffect, useRef } from "react";
+import Lenis from "lenis";
+import ReportSection from "./ReportSection";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Footer from "../footer";
+import AboutSection from "./aboutSection";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const MainSection = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     const lenis = new Lenis();
     function raf(time: number) {
@@ -15,17 +23,38 @@ const MainSection = () => {
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
+
+    if (containerRef.current) {
+      gsap.to(containerRef.current, {
+        zIndex: 999,
+        yPercent: 0,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top top",
+          end: "bottom bottom",
+          scrub: true,
+        },
+      });
+    }
   }, []);
 
   return (
-    <div className="smooth-wrapper w-full gap-28 flex flex-col lg:px-0 mb-28 bg-default-white">
-      <ImageSection />
-      <div className=" bg-black"></div>
-      <WhoWeAreSection />
-      <div className=" bg-black"></div>
-      <PlansSection />
-      <QuestionSection />
-    </div>
+    <>
+      <div
+        ref={containerRef}
+        className="smooth-wrapper w-full gap-28 flex flex-col lg:px-0  bg-default-white"
+      >
+        {/* <ImageSection /> */}
+        <AboutSection />
+        {/* <HeroSection /> */}
+        <WhoWeAreSection />
+        <ReportSection />
+        <PlansSection />
+        <QuestionSection />
+        <Footer />
+      </div>
+    </>
   );
 };
 
