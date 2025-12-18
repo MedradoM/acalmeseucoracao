@@ -52,21 +52,21 @@ const Header = () => {
         <Image
           alt="Logo"
           src={"/icon_green.svg"}
-          width={!open ? (isScrolled ? 70 : 110) : 70}
-          height={!open ? (isScrolled ? 70 : 110) : 70}
+          width={70}
+          height={70}
           className={twMerge(
             "transition-all duration-1000 object-scale-down",
-            !open && isScrolled ? "opacity-100" : "opacity-0"
+            !open && isScrolled ? "opacity-100" : "opacity-0 size-[2vw]"
           )}
         />
         <Image
           alt="Logo"
           src={"/icon.svg"}
-          width={!open ? (isScrolled ? 70 : 110) : 70}
-          height={!open ? (isScrolled ? 70 : 110) : 70}
+          width={70}
+          height={70}
           className={twMerge(
             "transition-all duration-1000 object-scale-down absolute",
-            !open && isScrolled ? "opacity-0" : "opacity-100"
+            !open && isScrolled ? "opacity-0" : "opacity-100 size-[2vw]"
           )}
         />
       </Link>

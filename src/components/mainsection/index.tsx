@@ -45,9 +45,7 @@ const MainSection = () => {
         ref={containerRef}
         className="smooth-wrapper w-full gap-28 flex flex-col lg:px-0  bg-default-white"
       >
-        {/* <ImageSection /> */}
         <AboutSection />
-        {/* <HeroSection /> */}
         <WhoWeAreSection />
         <ReportSection />
         <PlansSection />

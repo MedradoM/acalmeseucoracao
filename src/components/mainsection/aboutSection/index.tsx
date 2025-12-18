@@ -1,15 +1,18 @@
 "use client";
 
-import ForestBackground from "./about-content/forest-background";
+import AboutContent from "./about-content/about-content";
+import ParallaxAboutContent from "./about-content/parallax-about-content";
 import ParallaxBackground from "./about-content/parallax-background";
 
 const AboutSection = () => {
   return (
-    <>
+    <div>
       <ParallaxBackground />
 
-      <ForestBackground />
-    </>
+      <AboutContent />
+
+      <ParallaxAboutContent />
+    </div>
   );
 };
 

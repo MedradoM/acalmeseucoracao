@@ -33,11 +33,24 @@ const Footer = () => {
           </div>
         </div>
 
-        <span className="h-0 rounded-full w-full border border-default-golden" />
-        {/* 
-        <div className="size-full text-[8vw] alumni-sans-pinstripe-regular">
-          Acalme seu Coração
+        {/* <div className="w-full overflow-hidden">
+          <h1
+            className="
+      text-[14vw] 
+      leading-[0.9] 
+      font-bold 
+      tracking-tight 
+      text-default-white 
+      whitespace-nowrap 
+      text-center 
+      opacity-10
+      select-none
+    "
+          >
+            Acalme
+          </h1>
         </div> */}
+        <span className="h-0 rounded-full w-full border border-default-golden" />
 
         <div className="w-full gap-4 flex-col lg:flex-row items-center justify-between flex">
           <p className="text-default-white lg:text-left text-center">

@@ -112,9 +112,9 @@ body {
 @keyframes back {
   0% {
     /* transform: translate(34%, 230); */
-    margin-top: 20%;
-    top: 56px;
-    margin-right: 180px;
+    margin-top: 85vh;
+    top: 12vh;
+    margin-left: 90vw;
   }
   100% {
     margin-top: 10px;
@@ -129,9 +129,9 @@ body {
     margin-left: 10px;
   }
   100% {
-    margin-top: 20%;
-    top: 56px;
-    margin-right: 180px;
+    margin-top: 85vh;
+    top: 12vh;
+    margin-left: 90vw;
   }
 }
 
