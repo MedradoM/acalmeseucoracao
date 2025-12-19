@@ -17,36 +17,42 @@ const textsAbout = [
     title: "Teste de titulo",
     description:
       "Descrição de teste para saber se está tudo certo com o layout",
+    img: florestImg,
   },
   {
     id: 2,
     title: "Teste de titulo",
     description:
       "Descrição de teste para saber se está tudo certo com o layout",
+    img: img2,
   },
   {
     id: 3,
     title: "Teste de titulo",
     description:
       "Descrição de teste para saber se está tudo certo com o layout",
+    img: img3,
   },
   {
     id: 4,
     title: "Teste de titulo",
     description:
       "Descrição de teste para saber se está tudo certo com o layout",
+    img: img4,
   },
   {
     id: 5,
     title: "Teste de titulo",
     description:
       "Descrição de teste para saber se está tudo certo com o layout",
+    img: img5,
   },
   {
     id: 6,
     title: "Teste de titulo",
     description:
       "Descrição de teste para saber se está tudo certo com o layout",
+    img: img6,
   },
 ];
 
@@ -103,51 +109,63 @@ const ParallaxAboutContent = () => {
   }, []);
 
   return (
-    <div className="h-[450vh] parallaxsection relative grid grid-cols-2 gap-24 w-full p-24">
-      <div className="h-full flex flex-col justify-around">
+    <div className="lg:h-[450vh] parallaxsection relative grid lg:grid-cols-2 gap-24 w-full lg:px-24 py-24 px-8">
+      <div className="h-full flex flex-col justify-around lg:gap-0 gap-24">
         {textsAbout.map((text) => (
           <div key={text.id} className="flex flex-col gap-4">
-            <h2 className="text-2xl font-semibold">{text.title}</h2>
-            <p className="text-base leading-relaxed">{text.description}</p>
+            <div className="w-full lg:hidden h-[30vh] relative rounded-xl overflow-hidden">
+              <Image src={text.img} alt={text.title} fill />
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <h2 className="text-2xl font-semibold">{text.title}</h2>
+              <p className="text-base leading-relaxed">{text.description}</p>
+            </div>
           </div>
         ))}
       </div>
-      <div className="sticky top-[9vh] w-full h-[88vh] rounded-xl overflow-hidden">
-        <Image id="img0" fill src={florestImg} alt="Pesosa feliz" />
+      <div className="sticky top-[9vh] w-full lg:h-[88vh] rounded-xl overflow-hidden">
+        <Image
+          className="lg:block hidden"
+          id="img0"
+          fill
+          src={florestImg}
+          alt="Pesosa feliz"
+        />
         <Image
           id="img1"
           fill
           src={img2}
           alt="Pesosa feliz"
-          className="opacity-0"
+          className="opacity-0 lg:block hidden"
         />
         <Image
           id="img2"
           fill
           src={img3}
           alt="Pesosa feliz"
-          className="opacity-0"
+          className="opacity-0 lg:block hidden"
         />
         <Image
           id="img3"
           fill
           src={img4}
           alt="Pesosa feliz"
-          className="opacity-0"
+          className="opacity-0 lg:block hidden"
         />
         <Image
           id="img4"
           fill
           src={img5}
           alt="Pesosa feliz"
-          className="opacity-0"
+          className="opacity-0 lg:block hidden"
         />
         <Image
           id="img5"
           fill
           src={img6}
           alt="Pesosa feliz"
-          className="opacity-0"
+          className="opacity-0 lg:block hidden"
         />
       </div>
     </div>
