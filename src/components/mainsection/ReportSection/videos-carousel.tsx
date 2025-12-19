@@ -29,9 +29,12 @@ const VideosCarousel = () => {
   return (
     <div className="lg:col-span-5 col-span-1 flex relative w-full justify-center">
       <Carousel setApi={setApi} className="size-full">
-        <CarouselContent className="h-[70vh]">
+        <CarouselContent className="lg:h-[70vh]">
           {data.videos.map((item, index) => (
-            <CarouselItem key={index} className="basis-full h-full">
+            <CarouselItem
+              key={index}
+              className="basis-full aspect-square lg:aspect-auto h-full"
+            >
               <Card className="w-full h-full">
                 <CardContent className="flex h-full w-full flex-col p-6">
                   <iframe

@@ -5,22 +5,22 @@ import Link from "next/link";
 
 const AboutContent = () => {
   return (
-    <div className="py-32 bg-default-green px-16 gap-16 items-center justify-end flex ">
+    <div className="py-32 bg-default-green px-8 lg:px-16 gap-16 items-center justify-end flex ">
       <div className="flex flex-col gap-8 justify-center lg:w-[80%] h-full">
         <div className="flex flex-col lg:gap-0 gap-8">
           <SplitTextAnimation
             text="Quem somos"
-            className="text-default-white lg:text-[1vw] text-[6.5vw] leading-[3vw] "
+            className="text-default-white lg:text-[1vw] text-[4.5vw] leading-[3vw] "
           />
 
           <SplitTextAnimation
             text="O Acalme Seu Coração é um programa Terapêutico Online focado em pessoas, buscando as raízes dos seus conflitos emocionais e promovendo a cura interior."
-            className="text-default-white text-justify lg:text-left lg:text-[clamp(2rem,3vw,4rem)] text-[clamp(2rem,2.6vw,3rem)] lg:leading-[3vw] leading-[9vw]"
+            className="text-default-white lg:text-[clamp(2rem,3vw,4rem)] text-[6vw] leading-[9vw] lg:leading-[3vw] "
           />
         </div>
 
         <SplitLineAnimation
-          className="text-default-white text-justify lg:text-left lg:text-[clamp(2rem,3vw,4rem)] text-[clamp(2rem,2.6vw,3rem)] lg:leading-[3vw] leading-[9vw]"
+          className="text-default-white lg:text-[clamp(2rem,3vw,4rem)] text-[6vw] leading-[9vw] lg:leading-[3vw]"
           text="Você vai avançar em todas as áreas da sua vida através de técnicas validadas e comprovadas, como a TFT, Coaching, PNL."
         />
 

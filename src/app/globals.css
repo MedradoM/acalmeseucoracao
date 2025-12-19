@@ -149,13 +149,13 @@ body {
       margin-left: 10px;
     }
     100% {
-      margin-top: 85%;
+      margin-top: 38vh;
     }
   }
 
   @keyframes backMobile {
     0% {
-      margin-top: 85%;
+      margin-top: 38vh;
     }
     100% {
       margin-top: 10px;

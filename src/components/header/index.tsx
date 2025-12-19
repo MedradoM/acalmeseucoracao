@@ -41,7 +41,7 @@ const Header = () => {
       <Link
         href={"#top"}
         className={twMerge(
-          "absolute flex gap-2 top14 ",
+          "absolute flex gap-2",
           !open
             ? isScrolled
               ? "Back bg-default-white rounded-full w-fit transition-all duration-1000"
