@@ -1,3 +1,5 @@
+"use client";
+
 import data from "./comments.json";
 
 import {
@@ -7,9 +9,23 @@ import {
 } from "@/components/ui/carousel";
 import AutoScroll from "embla-carousel-auto-scroll";
 import { Card, CardContent } from "@/components/ui/card";
+import { useEffect, useState } from "react";
 
 const CommentsCarousel = () => {
-  const mobile = window.screen.width > 640 ? false : true;
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 640px)");
+
+    const handleResize = () => {
+      setMobile(mediaQuery.matches);
+    };
+
+    handleResize(); // executa na montagem
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
 
   return (
     <div className="lg:col-span-3 col-span-1">

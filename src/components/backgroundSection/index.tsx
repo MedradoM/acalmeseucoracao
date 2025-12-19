@@ -3,7 +3,7 @@
 import { useScrollContext } from "@/context/scrollContext";
 import { MeshReflectorMaterial } from "@react-three/drei";
 import { Canvas, useFrame, useLoader, useThree } from "@react-three/fiber";
-import { Suspense, useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import * as THREE from "three";
 import { cn } from "@/lib/utils";
@@ -106,8 +106,14 @@ function WaterSurface() {
 
 const ImageBackground = () => {
   const { size } = useThree();
-  const backgroundPath =
-    window.screen.width > 768 ? "/calmLake.png" : "/calmLake-mobile.png";
+  const [backgroundPath, setBackgroundPath] = useState("/calmLake.png");
+
+  useEffect(() => {
+    setBackgroundPath(
+      window.screen.width > 768 ? "/calmLake.png" : "/calmLake-mobile.png"
+    );
+  }, []);
+
   const texture = useLoader(THREE.TextureLoader, backgroundPath);
 
   const imageAspect = texture.image.width / texture.image.height;
