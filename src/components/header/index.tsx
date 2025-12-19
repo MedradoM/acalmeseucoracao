@@ -56,7 +56,7 @@ const Header = () => {
           height={70}
           className={twMerge(
             "transition-all duration-1000 object-scale-down",
-            !open && isScrolled ? "opacity-100" : "opacity-0 size-[2vw]"
+            !open && isScrolled ? "opacity-100" : "opacity-0 lg:size-[2vw]"
           )}
         />
         <Image
@@ -66,7 +66,7 @@ const Header = () => {
           height={70}
           className={twMerge(
             "transition-all duration-1000 object-scale-down absolute",
-            !open && isScrolled ? "opacity-0" : "opacity-100 size-[2vw]"
+            !open && isScrolled ? "opacity-0" : "opacity-100 lg:size-[2vw]"
           )}
         />
       </Link>

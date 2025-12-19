@@ -81,9 +81,16 @@ function WaterSurface() {
     mesh.geometry.computeVertexNormals();
   });
 
+  const lakeSize: [
+    width: number,
+    height: number,
+    widthSegments: number,
+    heightSegments: number
+  ] = window.screen.width > 768 ? [40, 40, 200, 200] : [20, 20, 100, 100];
+
   return (
     <mesh ref={meshRef} rotation-x={-Math.PI / 2}>
-      <planeGeometry args={[40, 40, 200, 200]} />
+      <planeGeometry args={lakeSize} />
       <MeshReflectorMaterial
         blur={[0, 0]}
         resolution={1024}
@@ -99,7 +106,9 @@ function WaterSurface() {
 
 const ImageBackground = () => {
   const { size } = useThree();
-  const texture = useLoader(THREE.TextureLoader, "/calmLake.png");
+  const backgroundPath =
+    window.screen.width > 768 ? "/calmLake.png" : "/calmLake-mobile.png";
+  const texture = useLoader(THREE.TextureLoader, backgroundPath);
 
   const imageAspect = texture.image.width / texture.image.height;
   const screenAspect = size.width / size.height;
@@ -122,7 +131,7 @@ const BackgroundSection = () => {
 
   return (
     <div className="h-screen w-screen fixed top-0 left-0">
-      <div className="flex relative  size-full">
+      <div className="flex relative justify-center lg:justify-normal size-full">
         <Canvas
           camera={{ position: [0, 0.3, -4], fov: 75 }}
           className="w-full h-full "
@@ -137,44 +146,33 @@ const BackgroundSection = () => {
           </Suspense>
         </Canvas>
 
-        <div className="absolute flex flex-col gap-4 bottom-[4vh] left-[30vw] -translate-x-1/2 ">
+        <div className="absolute flex flex-col lg:gap-4 text-center lg:text-left lg:bottom-[4vh] lg:left-[30vw] self-center lg:translate-y-0 -translate-y-[50px] lg:-translate-x-1/2 ">
           <div id="titulo-acalme" className="flex items-center gap-4">
             <SplitTextAnimation
-              className="transition-all font-stretch-[50%] duration-1000 text-[6vw] text-nowrap leading-none tracking-[-0.04em] text-default-white whitespace-nowrap  select-none pointer-events-none"
+              className="transition-all font-stretch-[50%] duration-1000 text-[10vw] lg:text-[6vw] text-nowrap leading-none tracking-[-0.04em] text-default-white whitespace-nowrap  select-none pointer-events-none"
               text="Acalme seu Coração"
             />
-            {/* 
-            <h1
-              className={twMerge(
-                "transition-all font-stretch-[50%] duration-1000 text-[6vw] text-nowrap leading-none tracking-[-0.04em] text-default-white whitespace-nowrap  select-none pointer-events-none"
-              )}
-            >
-              Acalme seu
-            </h1>
-            <h1
-              className={twMerge(
-                "transition-all duration-1000 text-[6vw] leading-none tracking-[-0.04em] text-default-white whitespace-nowrap  select-none pointer-events-none"
-              )}
-            >
-              Coração
-            </h1> */}
           </div>
 
-          <h4 className={cn("text-[1.8vw] font-light text-default-white")}>
+          <h4
+            className={cn(
+              "lg:text-[1.8vw] text-[3vw] font-light text-default-white"
+            )}
+          >
             Liberte-se da ansiedade e abraçe a paz interior
           </h4>
         </div>
 
         <div
           className={twMerge(
-            "absolute flex flex-col gap-4 max-w-[28vw] p-4 bg-default-white/25 backdrop-blur-lg rounded-2xl bottom-8 right-[3vw] border border-default-white/30 ease-[linear(0,-0.004_8.7%,-0.019_16.8%,-0.111_41.5%,-0.13_49.9%,-0.13_54.6%,-0.12_59%,-0.099_63.1%,-0.067_67%,-0.008_71.8%,0.071_76.3%,0.289_84.7%,0.598_92.6%,1)] transition-all  duration-700",
-            isScrolled && "-right-[30vw] "
+            "absolute flex flex-col gap-4 max-w-[90vw] w-full lg:max-w-[28vw] p-4 bg-default-white/25 backdrop-blur-lg rounded-2xl bottom-8 lg:right-[3vw] border border-default-white/30 ease-[linear(0,-0.004_8.7%,-0.019_16.8%,-0.111_41.5%,-0.13_49.9%,-0.13_54.6%,-0.12_59%,-0.099_63.1%,-0.067_67%,-0.008_71.8%,0.071_76.3%,0.289_84.7%,0.598_92.6%,1)] transition-all duration-700",
+            isScrolled && "lg:-right-[30vw]"
           )}
         >
-          <h4 className="text-[1.3vw] font-semibold text-default-white">
+          <h4 className="lg:text-[1.3vw] text-[4vw] font-semibold text-default-white">
             Acabe com a ansiedade
           </h4>
-          <p className="text-[0.8vw] font-light text-default-white">
+          <p className="lg:text-[0.8vw] text-[2.9vw] font-light text-default-white">
             Juntos podemos alcançar a serenidade e o equilíbrio emocional que
             você deseja.
           </p>
@@ -188,7 +186,7 @@ const BackgroundSection = () => {
             asChild
           >
             <Link className="flex items-center gap-2" href={"/#planos"}>
-              <span className="text-[0.9vw] font-medium text-default-black">
+              <span className="lg:text-[0.9vw] text-[2.5vw] font-medium text-default-black">
                 Assinar Agora
               </span>
 

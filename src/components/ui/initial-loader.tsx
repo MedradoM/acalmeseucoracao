@@ -80,7 +80,7 @@ export default function InitialLoader() {
 
             <p
               key={currentPhraseIndex}
-              className="text-2xl md:text-3xl font-light text-default-white animate-in fade-in duration-1000"
+              className="text-2xl md:text-3xl text-center font-light text-default-white animate-in fade-in duration-1000"
             >
               {breathingPhrases[currentPhraseIndex]}
             </p>
