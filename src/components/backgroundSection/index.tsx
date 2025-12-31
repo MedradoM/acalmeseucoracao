@@ -152,7 +152,7 @@ const BackgroundSection = () => {
           </Suspense>
         </Canvas>
 
-        <div className="absolute flex flex-col lg:gap-4 text-center lg:text-left lg:bottom-[4vh] lg:left-[30vw] self-center lg:translate-y-0 -translate-y-[50px] lg:-translate-x-1/2 ">
+        <div className="absolute flex flex-col items-center lg:items-start lg:gap-4 text-center lg:text-left lg:bottom-[4vh] lg:left-[30vw] self-center lg:translate-y-0 -translate-y-[50px] lg:-translate-x-1/2 ">
           <div id="titulo-acalme" className="flex items-center gap-4">
             <SplitTextAnimation
               className="transition-all font-stretch-[50%] duration-1000 text-[10vw] lg:text-[6vw] text-nowrap leading-none tracking-[-0.04em] text-default-white whitespace-nowrap  select-none pointer-events-none"
@@ -162,10 +162,10 @@ const BackgroundSection = () => {
 
           <h4
             className={cn(
-              "lg:text-[1.8vw] text-[3vw] font-light text-default-white"
+              "lg:text-[1.3vw] text-[3.2vw]  max-w-[70vw] text-wrap font-light text-default-white"
             )}
           >
-            Liberte-se da ansiedade e abraçe a paz interior
+            Um caminho leve e profundo para cuidar do seu emocional e acalmar o coração.
           </h4>
         </div>
 
@@ -179,8 +179,7 @@ const BackgroundSection = () => {
             Acabe com a ansiedade
           </h4>
           <p className="lg:text-[0.8vw] text-[2.9vw] font-light text-default-white">
-            Juntos podemos alcançar a serenidade e o equilíbrio emocional que
-            você deseja.
+            O cuidado emocional que ajuda você a lidar com a ansiedade, acolher suas emoções e viver com mais presença e equilíbrio.
           </p>
 
           <Button

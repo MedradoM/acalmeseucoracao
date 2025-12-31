@@ -8,7 +8,7 @@ export default function Home() {
     <ScrollProvider>
       <div id="top" className="bg-default-white">
         <Header />
-        <div className="relative h-[180vh]">
+        <div className="relative h-[150vh]">
           <BackgroundSection />
         </div>
         <MainSection />

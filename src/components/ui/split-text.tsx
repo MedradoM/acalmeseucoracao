@@ -49,13 +49,19 @@ const SplitTextAnimation = ({ text, className }: SplitTextProps) => {
 
       return () => {
         split.revert();
+        ScrollTrigger.getAll().forEach((t) => t.kill());
       };
     }
   }, []);
 
   return (
     <p ref={textRef} className={cn(className)}>
-      {text}
+      {text.split("\n").map((line, index) => (
+        <span key={index}>
+          {line}
+          <br />
+        </span>
+      ))}
     </p>
   );
 };

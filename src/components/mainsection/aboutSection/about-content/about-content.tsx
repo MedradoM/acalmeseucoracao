@@ -14,14 +14,37 @@ const AboutContent = () => {
           />
 
           <SplitTextAnimation
-            text="O Acalme Seu Coração é um programa Terapêutico Online focado em pessoas, buscando as raízes dos seus conflitos emocionais e promovendo a cura interior."
+            text={`O Acalme Seu Coração nasceu para ser um espaço seguro, ético e eficaz de cuidado emocional.
+            
+            Um lugar onde sentir é permitido e acolhido.
+
+            Acreditamos que a ansiedade, o cansaço emocional e a desconexão interior não são fraquezas — são sinais de que algo precisa de atenção.
+
+            O Acalme Seu Coração, foi criado para apoiar você em diferentes momentos da sua jornada emocional.
+            Não se trata de “consertar” emoções, mas de aprender a escutá-las, acolhê-las e cuidar de si com mais consciência e gentileza.
+
+            Um programa de cuidado emocional para quem deseja viver com mais presença, equilíbrio e alegria.
+           `}
             className="text-default-white lg:text-[clamp(2rem,3vw,4rem)] text-[6vw] leading-[9vw] lg:leading-[3vw] "
           />
         </div>
 
         <SplitLineAnimation
-          className="text-default-white lg:text-[clamp(2rem,3vw,4rem)] text-[6vw] leading-[9vw] lg:leading-[3vw]"
-          text="Você vai avançar em todas as áreas da sua vida através de técnicas validadas e comprovadas, como a TFT, Coaching, PNL."
+          className="text-default-white whitespace-pre-line lg:text-[clamp(2rem,3vw,4rem)] text-[6vw] leading-[9vw] lg:leading-[3vw] "
+          text={`Para quem é:
+
+• Para quem sente ansiedade, tensão ou cansaço emocional
+• Para quem deseja aprender a lidar melhor com as emoções
+• Para quem busca mais presença e clareza no dia a dia
+• Para quem quer se cuidar emocionalmente com profundidade e leveza
+
+O que você desenvolve ao longo do programa:
+
+• Mais calma e regulação emocional
+• Inteligência emocional
+• Presença no momento presente
+• Autonomia emocional
+`}
         />
 
         <Button

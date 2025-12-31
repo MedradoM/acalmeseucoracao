@@ -91,21 +91,46 @@ const ParallaxBackground = () => {
   }, []);
 
   return (
-    <div className="h-[300vh] mainsection relative w-full">
+    <div className="h-[250vh] mainsection relative w-full">
       <div className="sticky overflow-hidden top-0 h-screen w-full flex items-center justify-center ">
         <div className="lg:w-[50%] w-[80%] flex items-center justify-center relative">
           <h1 ref={text1} className="lg:text-4xl text-xl absolute text-center">
-            Você sente cansaço mental, ansiedade, medo? Precisa voltar a sentir
-            alegria na vida?
+            Você sente que a mente não desacelera, o corpo vive em tensão, as
+            emoções vêm intensas demais, não sabe o que fazer quando vem aquele
+            desânimo e ansiedade… sente que precisa volta a sentir alegria na
+            vida?
+            <br />
+            <br />
+            Você não está sozinha(o). E não precisa continuar assim.
           </h1>
+
           <h1
             ref={text2}
             className="lg:text-4xl text-xl absolute text-center opacity-0"
           >
-            O programa Acalme o seu coração foi criado para te ajudar a superar
-            os desafios emocionais e a quebrar as antigas correntes que te
-            impedem de seguir em frente.
+            O Acalme Seu Coração oferece um caminho de cuidado emocional que
+            integra presença, consciência, acolhimento das emoções e práticas
+            simples para o dia a dia. Aqui, você não aprende a ignorar o que
+            sente.
+            <br />
+            Aprende a escutar, acolher e transformar sua relação com as emoções.
+            <br />
+            <br />
+            • Sem julgamentos <br />
+            • Sem cobranças <br />
+            • No seu ritmo <br />• Com acompanhamento e direção
+            <br />
+            <br />
+            Se algo em você sentiu um “sim” ao chegar até aqui, talvez esse seja
+            o seu momento.
           </h1>
+          {/* 
+          <h1
+            ref={text3}
+            className="lg:text-4xl text-xl absolute text-center opacity-0"
+          >
+            
+          </h1> */}
         </div>
 
         <div
